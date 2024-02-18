@@ -1,7 +1,7 @@
 
 import React from "react";
 import { LinkItemProps, TopFooterSectionItemProps } from "./types";
-import RenderItem from "@professor-blog/utils/RenderItem";
+import { RenderItem } from "@professor-blog/utils";
 
 const ContactData = {
   name: "Prof. Dr. S. Jayarama Reddy",
