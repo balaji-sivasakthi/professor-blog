@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto my-[100px] lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7">
           <h1 className="max-w-2xl mb-4 text-2xl font-bold tracking-tight leading-none md:text-3xl xl:text-3xl dark:text-white">
-            Chancellor's Profile
+            Chancellor&apos;s Profile
           </h1>
           <h1 className="max-w-2xl mb-4 text-3xl font-extrabold md:text-5xl xl:text-5xl dark:text-white">
             Professor Dr. S. Jayarama Reddy, M.Sc., Ph.D.

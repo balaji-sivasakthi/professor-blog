@@ -1,5 +1,4 @@
 "use client";
-import RelatedArticles from '@professor-blog/components/RelatedArticles';
 import useFetch from '@professor-blog/hooks/useFetch';
 import { useParams } from 'next/navigation'
 import React from 'react'

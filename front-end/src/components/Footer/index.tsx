@@ -1,11 +1,4 @@
-
 import React from "react";
-import { RenderItem } from "@professor-blog/utils";
-import { TopFooterSectionItem } from "./footer.component";
-import { LinkItem } from "./footer-link-item.component";
-import { ContactDetails } from "./footer-contact-details.component";
-import { FOOTER_DATA } from "./constants";
-
 
 const Footer = () => {
   return (
