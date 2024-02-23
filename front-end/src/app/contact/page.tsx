@@ -11,13 +11,12 @@ function Contact() {
             Get in touch with us if you have any questions, comments, or concerns!
           </p>
           <p className="pb-4"><strong>Address:</strong><br />
-            Hill Center for the Mathematical Sciences<br />
-            110 Frelinghuysen Road<br />
-            Piscataway, NJ 08854
+          Jayapadma Nivas, 12-13-853/22,<br />
+          Street No. 13, Nagarjuna Nagar,<br />
+          Tarnaka, Hyderabad -500 017, India.
           </p>
-          <p><strong>Phone:</strong> 848-445-4357<br />
-            <strong>Fax:</strong> 732-445-5493<br />
-            <strong>Email:</strong> help@oit.rutgers.edu<br />
+          <p><strong>Phone:</strong> 9949027118, 7989290324<br />
+            <strong>Email:</strong> profsjr@gmail.com , chancellor.sjr@gmail.com<br />
             <p className="pt-4"><strong>Hours:</strong><br /> 8:30am – 5:00pm Monday – Friday
             </p></p>
         </div>
