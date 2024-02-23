@@ -133,7 +133,7 @@ function Contact() {
                       <div className="md:flex-grow leading-loose gap-y-2">
                         <ul>
                           {
-                            item.content.map((c: any, index) => {
+                            item.content.map((c: any, index: number) => {
                               return <li key={index} className="text-md text-left text-black" >• {c}</li>
                             })
                           }
