@@ -1,36 +1,35 @@
 "use client";
-
-import React from 'react'
-
-
-// Chancellor, Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya(Deemed to be University), Kanchipuram
-// Formerly
-// Vice - Chancellor, Sri Venkateswara University, Tirupati
-// President, PRIST(Deemed to be University), Thanjavur
-// Chairman, UTF, Centurion University, Bhubaneswar
-// Chairman, University Advisory Board, Shri Guru Ram ai University, Dehradun
-// Chairman, University task force, Jain University, Bangalore
-
+import React from "react";
 const Hero = () => {
-    return (
-        <section className="bg-white dark:bg-gray-900">
-            <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12" >
-                <div className="mr-auto place-self-center lg:col-span-7">
-                    <h1 className="max-w-2xl mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-3xl dark:text-white">CHANCELLOR'S PROFILE</h1>
-                    <h1 className="max-w-2xl mb-4 text-3xl font-extrabold md:text-5xl xl:text-5xl dark:text-white">PROF DR S JAYARAMA REDDY M.SC., PH.D.</h1>
-                    <p className="max-w-2xl mb-2 text-sm font-light text-gray-500  md:text-lg lg:text-md dark:text-gray-400">Chancellor, Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya(Deemed to be University), Kanchipuram</p>
-                    <p className="max-w-2xl mb-2 text-sm font-light text-gray-500  md:text-lg lg:text-md dark:text-gray-400">Vice - Chancellor, Sri Venkateswara University, Tirupati</p>
-                    <p className="max-w-2xl mb-2 text-sm font-light text-gray-500  md:text-lg lg:text-md dark:text-gray-400">President, PRIST(Deemed to be University), Thanjavur.</p>
-                    <p className="max-w-2xl mb-2 text-sm font-light text-gray-500  md:text-lg lg:text-md dark:text-gray-400">Chairman, UTF, Centurion University, Bhubaneswar.</p>
-                    <p className="max-w-2xl mb-2 text-sm font-light text-gray-500  md:text-lg lg:text-md dark:text-gray-400">Chairman, University Advisory Board, Shri Guru Ram ai University, Dehradun.</p>
-                    <p className="max-w-2xl mb-2 text-sm font-light text-gray-500  md:text-lg lg:text-md dark:text-gray-400">Chairman, University task force, Jain University, Bangalore.</p>
-                </div>
-                <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup" />
-                </div>
-            </div>
-        </section>
-    )
-}
+  return (
+    <section className="dark:bg-gray-900 w-full">
+      <div className="grid max-w-screen-xl px-4 py-8 mx-auto my-[100px] lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div className="mr-auto place-self-center lg:col-span-7">
+          <h1 className="max-w-2xl mb-4 text-2xl font-bold tracking-tight leading-none md:text-3xl xl:text-3xl dark:text-white">
+            Chancellor's Profile
+          </h1>
+          <h1 className="max-w-2xl mb-4 text-3xl font-extrabold md:text-5xl xl:text-5xl dark:text-white">
+            Professor Dr. S. Jayarama Reddy, M.Sc., Ph.D.
+          </h1>
+          <a
+            href="#"
+            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+          >
+            Get started
+          </a>
+        </div>
+        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+          <img
+            className="rounded-full"
+            height={400}
+            width={400}
+            src="./assets/images/chancellor.png"
+            alt="mockup"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default Hero
+export default Hero;
