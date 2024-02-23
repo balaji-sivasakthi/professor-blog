@@ -1,12 +1,9 @@
 import React from "react";
-import Topbar from "./topbar.components";
 import Navbar from "./nav-bar.components";
 
 function Header() {
   return (
-    <div>
-      <Topbar />
-      {/* logo of the site  */}
+    <div className="sticky top-0 bg-white_color">
       <Navbar />
     </div>
   );

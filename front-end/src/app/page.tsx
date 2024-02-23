@@ -1,9 +1,10 @@
+import Hero from "@professor-blog/components/Hero";
 import PostsCard from "@professor-blog/components/PostCard";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between">
-      <div className="w-full h-[60vh] bg-green-600"></div>
+      <Hero />
       <div className="w-full bg-[#333] md:flex p-12 justify-between">
         <h1 className="text-white text-xl mb-3">
           Office Hours for Summer 2019 Semester is by Appointment Only
