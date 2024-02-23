@@ -85,13 +85,13 @@ const Blog = () => {
 
                                     <div className="flex flex-wrap -m-4">
                                         {
-                                            data?.data?.map((item) => {
+                                        data?.data && Array.from(data?.data as unknown as {id : number, attributes: {Title: string;  Description: string;}}[]).map((item) => {
                                                 return (
                                                     <>
                                                         <Card
-                                                            id={item.id}
-                                                            title={item.attributes.Title}
-                                                            description={item.attributes.Description}
+                                                            id={item?.id}
+                                                            title={item?.attributes?.Title}
+                                                            description={item?.attributes?.Description}
                                                             svgPath="M22 12h-4l-3 9L9 3l-3 9H2"
                                                         />
                                                     </>
