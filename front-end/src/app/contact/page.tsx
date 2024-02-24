@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact() {
   return (
-    <div className="mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-40">
+    <div className="mx-auto px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-40 py-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
         <div>
           <h2 className="text-4xl my-6 tracking-wide">Contact</h2>
@@ -66,7 +66,7 @@ function Contact() {
             </div>
             <button
               type="submit"
-              className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-white hover:text-black hover:border border-black"
+              className="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-white hover:text-black hover:border border-black"
             >
               Submit
             </button>
