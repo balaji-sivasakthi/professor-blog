@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import Header from "@professor-blog/components/Header";
 import "./globals.css";
 import Footer from "@professor-blog/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Poppins({
+  weight: "500",
+  style: "italic",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Professor Dr S Jayarama Reddy M.Sc., Ph.D.",
@@ -18,12 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-
+      <body className={font.className}>
         <Header />
         {children}
         <Footer />
-
       </body>
     </html>
   );
