@@ -98,7 +98,7 @@ function Navbar() {
             role="button"
           >
             {" "}
-            Get started now{" "}
+            Get in Touch{" "}
           </a>
         </nav>
 
