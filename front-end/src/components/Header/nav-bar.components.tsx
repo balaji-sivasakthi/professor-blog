@@ -59,7 +59,7 @@ function Navbar() {
 
           <div className="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
             <a
-              href="#"
+              href="/"
               title=""
               className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
             >
@@ -67,7 +67,7 @@ function Navbar() {
             </a>
 
             <a
-              href="#"
+              href="About"
               title=""
               className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
             >
@@ -75,7 +75,7 @@ function Navbar() {
             </a>
 
             <a
-              href="#"
+              href="/blog"
               title=""
               className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
             >
@@ -83,7 +83,7 @@ function Navbar() {
             </a>
 
             <a
-              href="#"
+              href="/contact"
               title=""
               className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
             >
@@ -92,7 +92,7 @@ function Navbar() {
           </div>
 
           <a
-            href="#"
+            href="/"
             title=""
             className="items-center justify-center hidden px-4 py-3 ml-10 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md lg:inline-flex hover:bg-blue-700 focus:bg-blue-700"
             role="button"
@@ -106,39 +106,35 @@ function Navbar() {
           <div className="flow-root">
             <div className="flex flex-col px-6 -my-2 space-y-1">
               <a
-                href="#"
+                href="/"
                 title=""
                 className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
               >
-                {" "}
-                Features{" "}
+                Home
               </a>
 
               <a
-                href="#"
+                href="/about"
                 title=""
                 className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
               >
-                {" "}
-                Solutions{" "}
+                About
               </a>
 
               <a
-                href="#"
+                href="/blog"
                 title=""
                 className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
               >
-                {" "}
-                Resources{" "}
+                Blogs
               </a>
 
               <a
-                href="#"
+                href="/contact"
                 title=""
                 className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
               >
-                {" "}
-                Pricing{" "}
+                Contact
               </a>
             </div>
           </div>
