@@ -24,6 +24,7 @@ function Navbar() {
 
           <button
             type="button"
+            onClick={toggleMenu}
             className="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100"
           >
             <svg
@@ -34,9 +35,9 @@ function Navbar() {
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M4 8h16M4 16h16"
               />
             </svg>
@@ -49,9 +50,9 @@ function Navbar() {
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
               />
             </svg>
@@ -102,55 +103,57 @@ function Navbar() {
           </a>
         </nav>
 
-        <nav className="pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden">
-          <div className="flow-root">
-            <div className="flex flex-col px-6 -my-2 space-y-1">
-              <a
-                href="/"
-                title=""
-                className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
-              >
-                Home
-              </a>
+        {showMenu && (
+          <nav className="pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden">
+            <div className="flow-root">
+              <div className="flex flex-col px-6 -my-2 space-y-1">
+                <a
+                  href="/"
+                  title=""
+                  className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  Home
+                </a>
 
-              <a
-                href="/about"
-                title=""
-                className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
-              >
-                About
-              </a>
+                <a
+                  href="/about"
+                  title=""
+                  className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  About
+                </a>
 
-              <a
-                href="/blog"
-                title=""
-                className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
-              >
-                Blogs
-              </a>
+                <a
+                  href="/blog"
+                  title=""
+                  className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  Blogs
+                </a>
 
+                <a
+                  href="/contact"
+                  title=""
+                  className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                >
+                  Contact
+                </a>
+              </div>
+            </div>
+
+            <div className="px-6 mt-6">
               <a
-                href="/contact"
+                href="#"
                 title=""
-                className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                className="inline-flex justify-center px-4 py-3 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md tems-center hover:bg-blue-700 focus:bg-blue-700"
+                role="button"
               >
-                Contact
+                {" "}
+                Get started now{" "}
               </a>
             </div>
-          </div>
-
-          <div className="px-6 mt-6">
-            <a
-              href="#"
-              title=""
-              className="inline-flex justify-center px-4 py-3 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md tems-center hover:bg-blue-700 focus:bg-blue-700"
-              role="button"
-            >
-              {" "}
-              Get started now{" "}
-            </a>
-          </div>
-        </nav>
+          </nav>
+        )}
       </div>
     </header>
   );
