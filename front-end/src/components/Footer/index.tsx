@@ -72,7 +72,7 @@ const Footer = () => {
                   alt="mockup"
                 />
                 <div>
-                  <p className="text-gray-500 dark:text-gray-400 text-[14px]">
+                  <span className="text-gray-500 dark:text-gray-400 text-[14px]">
                     <strong className="text-black">
                       Dr. S. Jayarama Reddy, M.Sc., Ph.D
                     </strong>
@@ -82,11 +82,11 @@ const Footer = () => {
                     Street No. 13, Nagarjuna Nagar,
                     <br />
                     Tarnaka, Hyderabad -500 017, India.
-                  </p>
+                  </span>
                 </div>
               </div>
               <div>
-                <p className="text-white text-[14px]">
+                <span className="text-white text-[14px]">
                   <strong className="text-black">Phone :</strong>{" "}
                   <a
                     className="hover:underline text-gray-500 dark:text-gray-400"
@@ -117,11 +117,11 @@ const Footer = () => {
                     chancellor.sjr@gmail.com
                   </a>
                   <br />
-                  <p className="text-gray-500 dark:text-gray-400">
+                  <span className="text-gray-500 dark:text-gray-400">
                     <strong className="text-black">Hours : </strong>
                     8:30am – 5:00pm Monday – Friday
-                  </p>
-                </p>
+                  </span>
+                </span>
               </div>
             </div>
           </div>

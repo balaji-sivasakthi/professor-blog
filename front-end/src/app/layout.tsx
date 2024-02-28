@@ -26,7 +26,6 @@ export default function RootLayout({
       <body className={font.className}>
         <Header />
         {children}
-        <Newsletter />
         <Footer />
       </body>
     </html>
