@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Roboto } from "next/font/google";
 import Header from "@professor-blog/components/Header";
 import "./globals.css";
 import Footer from "@professor-blog/components/Footer";
 import Newsletter from "@professor-blog/components/Newsletter";
 
-const font = Poppins({
+const font = Roboto({
   weight: "500",
-  style: "italic",
+  style: "normal",
   subsets: ["latin"],
 });
 
@@ -23,10 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={`bg-[#EEF5FF] ${font.className}`}>
         <Header />
         {children}
-        <Newsletter />
         <Footer />
       </body>
     </html>

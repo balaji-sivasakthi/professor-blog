@@ -2,25 +2,24 @@
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 
-
 const navPages = [
   {
     path: "/",
-    title: "Home"
+    title: "Home",
   },
   {
     path: "/about",
-    title: "About"
+    title: "About",
   },
   {
     path: "/blog",
-    title: "Blogs"
+    title: "Blogs",
   },
   {
     path: "/contact",
-    title: "Contact"
+    title: "Contact",
   },
-]
+];
 
 function Navbar() {
   const pathName = usePathname();
@@ -32,7 +31,7 @@ function Navbar() {
 
   return (
     <header className="pb-6 lg:pb-0">
-      <div className="pb-1 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 bg-black rounded-b-xl">
+      <div className="pb-1 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 bg-[#6366f1] rounded-b-xl">
         <nav className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex-shrink-0">
             <a href="#" title="" className="flex text-slate-800">
@@ -79,20 +78,18 @@ function Navbar() {
           </button>
 
           <div className="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-5">
-
-            {
-              navPages.map((page: any) => [
-                <a
-                  key={page?.path}
-                  href={page?.path}
-                  title=""
-                  className={`text-base font-medium text-white transition-all duration-200 hover:text-blue-600 focus:text-blue-600 ${pathName == page?.path && 'underline'}`}
-                >
-                  {page?.title}
-                </a>
-              ])
-            }
-
+            {navPages.map((page: any) => [
+              <a
+                key={page?.path}
+                href={page?.path}
+                title=""
+                className={`text-base font-medium text-white transition-all duration-200 hover:text-gray-100 focus:text-gray-100 ${
+                  pathName == page?.path && "underline"
+                }`}
+              >
+                {page?.title}
+              </a>,
+            ])}
           </div>
 
           <a

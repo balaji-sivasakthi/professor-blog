@@ -25,12 +25,6 @@
       "required": true,
       "minLength": 1
     },
-    "Rating": {
-      "type": "integer",
-      "required": true,
-      "max": 5,
-      "min": 1
-    },
     "Comment": {
       "type": "string"
     },
@@ -45,29 +39,9 @@
         "audios"
       ]
     },
-    "categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::category.category",
-      "inversedBy": "blogs"
-    },
     "Author": {
       "type": "string",
       "required": true
-    },
-    "Designation": {
-      "type": "string",
-      "required": true
-    },
-    "Profile": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
     }
   }
 }
