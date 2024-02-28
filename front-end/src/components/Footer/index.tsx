@@ -2,15 +2,15 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-200 dark:bg-gray-800 antialiased">
+    <footer className="bg-gray-200antialiased">
       <div className="p-4 py-6 mx-auto max-w-screen-xl md:p-8 lg:p-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
           <div className="grid grid-cols-2 place-items-center md:place-items-start lg:place-items-start gap-8 md:grid-cols-2 lg:grid-cols-2">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
                 Company
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400">
+              <ul className="text-gray-500">
                 <li className="mb-4">
                   <a href="/about" className=" hover:underline">
                     About
@@ -34,10 +34,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
                 Help center
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400">
+              <ul className="text-gray-500">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
                     Discord Server
@@ -72,7 +72,7 @@ const Footer = () => {
                   alt="mockup"
                 />
                 <div>
-                  <span className="text-gray-500 dark:text-gray-400 text-[14px]">
+                  <span className="text-gray-500text-[14px]">
                     <strong className="text-black">
                       Dr. S. Jayarama Reddy, M.Sc., Ph.D
                     </strong>
@@ -89,14 +89,14 @@ const Footer = () => {
                 <span className="text-white text-[14px]">
                   <strong className="text-black">Phone :</strong>{" "}
                   <a
-                    className="hover:underline text-gray-500 dark:text-gray-400"
+                    className="hover:underline text-gray-500 "
                     href="tel:+919949027118"
                   >
                     9949027118
                   </a>
                   ,
                   <a
-                    className="hover:underline text-gray-500 dark:text-gray-400"
+                    className="hover:underline text-gray-500 "
                     href="tel:+917989290324"
                   >
                     7989290324
@@ -104,20 +104,20 @@ const Footer = () => {
                   <br />
                   <strong className="text-black">Email :</strong>{" "}
                   <a
-                    className="hover:underline text-gray-500 dark:text-gray-400"
+                    className="hover:underline text-gray-500 "
                     href="mailto:profsjr@gmail.com"
                   >
                     profsjr@gmail.com
                   </a>
                   ,
                   <a
-                    className="hover:underline text-gray-500 dark:text-gray-400"
+                    className="hover:underline text-gray-500 "
                     href="mailto:chancellor.sjr@gmail.com"
                   >
                     chancellor.sjr@gmail.com
                   </a>
                   <br />
-                  <span className="text-gray-500 dark:text-gray-400">
+                  <span className="text-gray-500">
                     <strong className="text-black">Hours : </strong>
                     8:30am – 5:00pm Monday – Friday
                   </span>
@@ -126,9 +126,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr className="my-4 border-gray-300 sm:mx-auto dark:border-gray-700 lg:my-5" />
+        <hr className="my-4 border-gray-300 sm:mx-autolg:my-5" />
         <div className="text-center">
-          <span className="block text-sm text-center text-gray-500 dark:text-gray-400">
+          <span className="block text-sm text-center text-gray-500">
             © Copyright{" "}
             <a href="#" className="hover:underline">
               SNS College of Technology
