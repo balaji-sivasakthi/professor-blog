@@ -18,7 +18,7 @@ const Hero = () => {
             Get started
           </a>
         </div>
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex mx-auto">
           <img
             className="rounded-full"
             height={400}
