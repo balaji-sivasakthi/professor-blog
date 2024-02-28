@@ -13,14 +13,14 @@ const Hero = () => {
           </h1>
           <a
             href="#"
-            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 "
+            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-[#6366f1] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 "
           >
             Get started
           </a>
         </div>
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex mx-auto">
+        <div className="lg:mt-0 lg:col-span-5 lg:flex mx-auto">
           <img
-            className="rounded-full"
+            className="rounded-full p-10"
             height={400}
             width={400}
             src="./assets/images/chancellor.png"

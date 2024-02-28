@@ -8,8 +8,8 @@ function About() {
         "Jayapadma Nivas, 12-13-853/22, Street No. 13, Nagarjuna Nagar, Tarnaka, Hyderabad -500 017, India.",
         "Mob: 9949027118,7989290324",
         "E-mail: profsjr@gmail.com , chancellor.sjr@gmail.com",
-        "Date of Birth : 1st July 1945"
-      ]
+        "Date of Birth : 1st July 1945",
+      ],
     },
     {
       title: "Position held",
@@ -18,8 +18,8 @@ function About() {
         "Founder Vice-Chancellor (in-Charge), Yogi Vemana University, Kadapa",
         "Vice-Chancellor (in-Charge), Dravidian University, Kuppam",
         "Vice-Chancellor (in-Charge), Sri Krishnadevaraya University, Anantapur",
-        "Member, Andhra Pradesh Pollution Control Appellate Authority"
-      ]
+        "Member, Andhra Pradesh Pollution Control Appellate Authority",
+      ],
     },
     {
       title: "Visiting Professor",
@@ -27,8 +27,8 @@ function About() {
         "Universities of Tokyo, Japan",
         "Universities of Humboldt University-Berlin, Germany",
         "Universities of Kanazawa, Japan",
-        "Senior Professor (C4), University of Greifswald, Germany"
-      ]
+        "Senior Professor (C4), University of Greifswald, Germany",
+      ],
     },
     {
       title: "Member, Executive Council",
@@ -42,8 +42,8 @@ function About() {
         "Professor of Chemistry, Sri Venkateswara University, Tirupati",
         "Dean, Faculty of Sciences, Sri Venkateswara University, Tirupati",
         "Dean, School of Mathematics and Physical Sciences, Sri Venkateswara University",
-        "Member, Board of Governers, A P Residential Educational Institutions Society"
-      ]
+        "Member, Board of Governers, A P Residential Educational Institutions Society",
+      ],
     },
     {
       title: "Head",
@@ -51,8 +51,8 @@ function About() {
         "Department of Chemistry, Sri Venkateswara University",
         "Department of Environmental Chemistry, S.V.U. College of Engineering Tirupati",
         "Scientific Officier, Twente University of Technology, Netherlands",
-        "President, Sri Venkateswara University Teachers Association"
-      ]
+        "President, Sri Venkateswara University Teachers Association",
+      ],
     },
     {
       title: "Honors and Awards",
@@ -64,7 +64,7 @@ function About() {
         "Executive Council Member, Indian Council of Chemists",
         "Founder President, Society for Environmental Chemists",
         "Sectional President, Environmental and Analytical Chemistry, IXth Annual conference of the Indian Council of Chemists",
-      ]
+      ],
     },
     {
       title: "Fellows",
@@ -74,22 +74,22 @@ function About() {
         "Andhra Pradesh/Telengana Akademi of Sciences",
         "ACTIM, France",
         "DAAD, Germany",
-        "Electrchemical Society of India"
-      ]
+        "Electrchemical Society of India",
+      ],
     },
     {
       title: "Visits Board",
       content: [
-        "Visited Germany, Switzerland, Denmark, Sweden, Netherlands, Scottland, England, France, Ireland, Belgium, Finland, Spain, Canada, U.S.A, Austria, Poland, Japan, Singapore and Malaysia on various academic assignments."
-      ]
+        "Visited Germany, Switzerland, Denmark, Sweden, Netherlands, Scottland, England, France, Ireland, Belgium, Finland, Spain, Canada, U.S.A, Austria, Poland, Japan, Singapore and Malaysia on various academic assignments.",
+      ],
     },
     {
       title: "Research",
       content: [
         "Guided 35 PhDs and 9 M.Phils",
         "270 research papers, 8 review articles and 16 general/popular articles in national and international journals, dailies such as The Hindu and Indian Express. Authored 4 books. Research work has been widely cited.",
-        "Research projects from agencies ISRO, DST, CSIR, TTD, MOEF, DNES, DAE, UGC and Alexander Von Humboldt Foundation, Germany."
-      ]
+        "Research projects from agencies ISRO, DST, CSIR, TTD, MOEF, DNES, DAE, UGC and Alexander Von Humboldt Foundation, Germany.",
+      ],
     },
     {
       title: "Academic Achievements",
@@ -112,38 +112,42 @@ function About() {
         "Chairman/Member, Board of Studies in Chemistry, S.V.University and Various other Universities",
         "Editorial Board and Referee of various Scientific Journals",
         "Governing Board member of various graduate and post-graduate colleges",
-        "Selection committees of various Universities"
-      ]
+        "Selection committees of various Universities",
+      ],
     },
-
-  ]
+  ];
   return (
     <div className="flex min-h-screen flex-col items-center justify-between p-24">
       <section className="text-gray-600 body-font overflow-hidden">
         <div className="container px-5 py-24 mx-auto">
-          <div className="-my-8 divide-y-2 divide-gray-100">
-            {
-              data.map((item: any) => {
-                return (
-                  <>
-                    <div className="py-8 flex flex-wrap md:flex-nowrap bg-[#f3f3f3] p-8 rounded-lg mb-10 items-center justify-center text-center gap-4">
-                      <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                        <span className="font-semibold title-font text-xl text-blue-600">{item.title}</span>
-                      </div>
-                      <div className="md:flex-grow leading-loose gap-y-2">
-                        <ul>
-                          {
-                            item.content.map((c: any, index: number) => {
-                              return <li key={index} className="text-md text-left text-black" >• {c}</li>
-                            })
-                          }
-                        </ul>
-                      </div>
+          <div className="-my-8 divide-y-2">
+            {data.map((item: any) => {
+              return (
+                <>
+                  <div className="py-8 flex flex-wrap md:flex-nowrap bg-white p-8 rounded-lg mb-10 items-center justify-center text-center gap-4">
+                    <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                      <span className="font-semibold title-font text-xl text-blue-600">
+                        {item.title}
+                      </span>
                     </div>
-                  </>
-                )
-              })
-            }
+                    <div className="md:flex-grow leading-loose gap-y-2">
+                      <ul>
+                        {item.content.map((c: any, index: number) => {
+                          return (
+                            <li
+                              key={index}
+                              className="text-md text-left text-black"
+                            >
+                              • {c}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  </div>
+                </>
+              );
+            })}
           </div>
         </div>
       </section>
