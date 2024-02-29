@@ -31,7 +31,7 @@ function Navbar() {
 
   return (
     <header className="pb-6 lg:pb-0">
-      <div className="pb-1 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 bg-[#6366f1] rounded-b-xl">
+      <div className="pb-1 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 bg-[#9091d8] rounded-xl">
         <nav className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex-shrink-0">
             <a href="#" title="" className="flex text-slate-800">
@@ -83,9 +83,8 @@ function Navbar() {
                 key={page?.path}
                 href={page?.path}
                 title=""
-                className={`text-base font-medium text-white transition-all duration-200 hover:text-gray-100 focus:text-gray-100 ${
-                  pathName == page?.path && "underline"
-                }`}
+                className={`text-base font-medium text-white transition-all duration-200 hover:text-gray-100 focus:text-gray-100 ${pathName == page?.path && "underline"
+                  }`}
               >
                 {page?.title}
               </a>,
