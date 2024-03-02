@@ -8,10 +8,6 @@ const navPages = [
     title: "Home",
   },
   {
-    path: "/about",
-    title: "About",
-  },
-  {
     path: "/blog",
     title: "Blogs",
   },
@@ -112,14 +108,6 @@ function Navbar() {
                   className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   Home
-                </a>
-
-                <a
-                  href="/about"
-                  title=""
-                  className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
-                >
-                  About
                 </a>
 
                 <a
