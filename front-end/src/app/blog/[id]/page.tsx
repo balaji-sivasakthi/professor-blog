@@ -30,16 +30,20 @@ const Content = () => {
               <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl">
                 {originalData?.Title}
               </h1>
-              <p className="lead">{originalData?.Description}</p>
+              <span className="text-slate-500">
+                By {originalData?.Author}{" "}
+                {new Date(originalData?.createdAt).toLocaleString()}
+              </span>
+              <div className="py-10">
+                {urlLink && (
+                  <img
+                    className="mr-4 w-full h-full"
+                    src={`http://localhost:1337${urlLink}`}
+                  />
+                )}
+              </div>
+              <p className="lead text-slate-800">{originalData?.Description}</p>
             </header>
-            <div>
-              {urlLink && (
-                <img
-                  className="mr-4 w-full h-full"
-                  src={`http://localhost:1337${urlLink}`}
-                />
-              )}
-            </div>
           </article>
         </div>
       </main>

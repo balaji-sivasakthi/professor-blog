@@ -10,7 +10,7 @@ const Blog = () => {
   console.log(data);
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-24">
+    <div className="flex min-h-screen flex-col items-center justify-between p-24 ">
       <section className="p-4 pt-20">
         <div className="flex flex-col text-center w-full mb-20">
           <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
@@ -25,7 +25,7 @@ const Blog = () => {
             <div className="container mx-auto">
               <section className=" text-gray-600 body-font">
                 <div className="px-5">
-                  <div className=" flex flex-wrap -m-4">
+                  <div className=" flex flex-wrap m-4">
                     {data?.data &&
                       Array.from(
                         data?.data as unknown as {

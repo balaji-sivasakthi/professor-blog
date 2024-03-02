@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Crimson_Text } from "next/font/google";
 import Header from "@professor-blog/components/Header";
 import "./globals.css";
 import Footer from "@professor-blog/components/Footer";
-import Newsletter from "@professor-blog/components/Newsletter";
 
-const font = Roboto({
-  weight: "500",
-  style: "normal",
+const font = Crimson_Text({
+  weight: "600",
   subsets: ["latin"],
 });
 
