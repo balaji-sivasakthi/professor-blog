@@ -34,14 +34,6 @@ const Content = () => {
               </h1>
               <p className="text-sm font-normal">{originalData?.Description}</p>
             </header>
-            <div>
-              {urlLink && (
-                <img
-                  className="mr-4 w-full h-full"
-                  src={`http://localhost:1337${urlLink}`}
-                />
-              )}
-            </div>
           </article>
         </div>
       </main>

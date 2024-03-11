@@ -1,3 +1,4 @@
+import Hero from "@professor-blog/components/Hero";
 import { data } from "@professor-blog/constants";
 import React from "react";
 
@@ -5,6 +6,7 @@ function About() {
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-between p-24">
+      <Hero />
       <section className="text-gray-600 body-font overflow-hidden">
         <div className="container px-5 py-24 mx-auto">
           <div className="-my-8 divide-y-2">

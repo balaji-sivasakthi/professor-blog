@@ -52,7 +52,7 @@ const Blog = () => {
               <p>Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est in graece fuisset, eos affert putent doctus id.</p>
             </div>
           </a>
-          <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {/* <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {data?.data &&
               Array.from(
                 data?.data as unknown as {
@@ -89,7 +89,7 @@ const Blog = () => {
                 Load more posts...
               </button>
             )}
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
