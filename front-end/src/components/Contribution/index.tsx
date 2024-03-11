@@ -8,13 +8,11 @@ const ContributionEntry = ({ title, content, isLeftTimeline }: any) => (
             {
                 content.length !== 0 && (
                     <ul>
-                        {content.split(",").map((item: any) => {
+                        {content.split(",").map((item: any, index: number) => {
                             return (
-                                <>
-                                    <li className='mb-2 text-gray-500'>
-                                        {item}
-                                    </li>
-                                </>
+                                <li key={index} className='mb-2 text-gray-500'>
+                                    {item}
+                                </li>
                             )
                         })}
                     </ul>

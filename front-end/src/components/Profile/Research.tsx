@@ -34,15 +34,13 @@ const Research = () => {
                     {
                         researchData.map((item: any, index: number) => {
                             return (
-                                <>
-                                    <li className="flex">
-                                        <div className="px-4 text-5xl font-extralight text-indigo-700">{index + 1}.</div>
-                                        <div>
-                                            <div className="text-xl font-bold text-indigo-800">{item.label}</div>
-                                            <p className="max-w-xs py-2 text-sm text-indigo-900">{item.content}</p>
-                                        </div>
-                                    </li>
-                                </>
+                                <li key={index} className="flex">
+                                    <div className="px-4 text-5xl font-extralight text-indigo-700">{index + 1}.</div>
+                                    <div>
+                                        <div className="text-xl font-bold text-indigo-800">{item.label}</div>
+                                        <p className="max-w-xs py-2 text-sm text-indigo-900">{item.content}</p>
+                                    </div>
+                                </li>
                             )
                         })
                     }

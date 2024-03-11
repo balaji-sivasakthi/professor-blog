@@ -1,5 +1,4 @@
 "use client";
-import { Button } from 'flowbite-react';
 import React, { useState } from 'react'
 
 const AboutContainer = () => {
@@ -11,7 +10,7 @@ const AboutContainer = () => {
                 <div className="flex flex-col items-center px-5 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="flex flex-col w-full max-w-3xl mx-auto prose text-center prose-blue">
                         <div className="w-full mx-auto">
-                            <h2 className='font-medium text-3xl m-2 p-2 text-indigo-500'>Hello! I'm Dr.S.Jayarama Reddy ( M.Sc., Ph.D )</h2>
+                            <h2 className='font-medium text-3xl m-2 p-2 text-indigo-500'>Hello!  {"I'm"} Dr.S.Jayarama Reddy ( M.Sc., Ph.D )</h2>
                             {isFormerly ? (
                                 <>
                                     <h4 className='font-light mt-2 text-2xl'>Formerly</h4>
@@ -32,7 +31,7 @@ const AboutContainer = () => {
                             )}
                         </div>
                         <label className="flex items-center cursor-pointer justify-center mt-4">
-                            <Button onClick={() => setIsFormerly(p => !p)}>{isFormerly ? 'Switch to Presently' : 'Switch to Formerly'}</Button>
+                            <button onClick={() => setIsFormerly(p => !p)}>{isFormerly ? 'Switch to Presently' : 'Switch to Formerly'}</button>
                         </label>
                     </div>
                 </div>

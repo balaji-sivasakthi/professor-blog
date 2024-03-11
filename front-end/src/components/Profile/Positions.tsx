@@ -93,33 +93,30 @@ const Positions = () => {
         <div className="flex flex-col h-full">
             <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                 {
-                    positionData.map((item: any) => {
+                    positionData.map((item: any, index: number) => {
                         return (
-                            <>
-                                <div className="flex items-center rounded-xl bg-white p-4 shadow-lg">
-
-                                    <div className="ml-4">
-                                        <h2 className="font-normal">{item.position}</h2>
-                                        <p className="mt-2 text-sm text-gray-500">
-                                            {
-                                                item.place.length !== 0 && (
-                                                    <div>
-                                                        <ul>
-                                                            {item.place.split(",").map((i: any, index: number) => {
-                                                                return (
-                                                                    <li key={index}>
-                                                                        {i}
-                                                                    </li>
-                                                                )
-                                                            })}
-                                                        </ul>
-                                                    </div>
-                                                )
-                                            }
-                                        </p>
+                            <div key={index} className="flex items-center rounded-xl bg-white p-4 shadow-lg">
+                                <div className="ml-4">
+                                    <h2 className="font-normal">{item.position}</h2>
+                                    <div className="mt-2 text-sm text-gray-500">
+                                        {
+                                            item.place.length !== 0 && (
+                                                <div>
+                                                    <ul>
+                                                        {item.place.split(",").map((i: any, index: number) => {
+                                                            return (
+                                                                <li key={index}>
+                                                                    {i}
+                                                                </li>
+                                                            )
+                                                        })}
+                                                    </ul>
+                                                </div>
+                                            )
+                                        }
                                     </div>
                                 </div>
-                            </>
+                            </div>
                         )
                     })
                 }
