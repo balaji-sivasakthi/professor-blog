@@ -7,9 +7,16 @@ const AboutContainer = () => {
     return (
         <>
             <section className='w-full bg-white'>
-                <div className="flex flex-col items-center px-5 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div className="flex flex-col items-center px-5 mx-auto max-w-7xl sm:px-6 lg:px-8 p-5">
                     <div className="flex flex-col w-full max-w-3xl mx-auto prose text-center prose-blue">
-                        <div className="w-full mx-auto">
+                        <div className="w-full flex flex-col justify-center items-center">
+                            <img
+                                className="rounded-full p-5"
+                                height={400}
+                                width={400}
+                                src="./assets/images/chancellor.png"
+                                alt="mockup"
+                            />
                             <h2 className='font-medium text-3xl m-2 p-2 text-indigo-500'>Hello!  {"I'm"} Dr.S.Jayarama Reddy ( M.Sc., Ph.D )</h2>
                             {isFormerly ? (
                                 <>
