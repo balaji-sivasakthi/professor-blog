@@ -19,13 +19,7 @@ const Hero = () => {
           </a>
         </div>
         <div className="lg:mt-0 lg:col-span-5 lg:flex mx-auto">
-          <img
-            className="rounded-full p-10"
-            height={400}
-            width={400}
-            src="./assets/images/chancellor.png"
-            alt="mockup"
-          />
+
         </div>
       </div>
     </section>

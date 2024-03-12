@@ -47,105 +47,14 @@ const Blog = () => {
           <a rel="noopener noreferrer" href="#" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
             <img src="https://source.unsplash.com/random/480x360" alt="" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
             <div className="p-6 space-y-2 lg:col-span-5">
-              <h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Noster tincidunt reprimique ad pro</h3>
+              <h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos error magni, quam excepturi eveniet consequatur aut corporis id dolore. Inventore.</h3>
               <span className="text-xs dark:text-gray-400">February 19, 2021</span>
-              <p>Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est in graece fuisset, eos affert putent doctus id.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quibusdam quam vero veniam placeat ipsam corrupti nihil necessitatibus velit optio adipisci illum vel inventore deserunt, quod atque ipsum repudiandae blanditiis, distinctio autem? Vel repellat eius facilis ratione. Dolores veritatis incidunt excepturi architecto iure pariatur dolorem cum voluptatum fuga nulla expedita non quia blanditiis reprehenderit corporis nihil aliquid, amet cupiditate doloribus ratione tenetur voluptates facilis! Adipisci beatae, modi nostrum velit eos consectetur fugiat eveniet laboriosam recusandae facilis labore, </p>
             </div>
           </a>
-          {/* <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {data?.data &&
-              Array.from(
-                data?.data as unknown as {
-                  id: number;
-                  attributes: { Title: string; Description: string };
-                }[]
-              )
-                .filter((card) => card.attributes.Title.toLowerCase().includes(searchTerm.toLowerCase()))
-                .slice(0, numCardsToShow)
-                .map((item) => {
-
-                  return (
-                    <>
-                      <Card
-                        id={item?.id}
-                        title={item?.attributes?.Title}
-                        description={item?.attributes?.Description}
-                        date={"January 26, 2021"}
-                        imgSrc={item?.attributes?.Image?.data[0]?.attributes?.url}
-                        svgPath="M22 12h-4l-3 9L9 3l-3 9H2"
-                      />
-                    </>
-                  );
-                })}
-
-          </div>
-          <div className="flex justify-center">
-            {numCardsToShow < data?.data?.length && (
-              <button
-                type="button"
-                className="px-6 py-3 text-sm rounded-md hover:underline dark:bg-gray-900 dark:text-gray-400"
-                onClick={loadMorePosts}
-              >
-                Load more posts...
-              </button>
-            )}
-          </div> */}
         </div>
       </section>
     </div>
-
-    // {cardData.slice(0, numCardsToShow).map((card, index) => (
-    //   <Card
-    //     key={index}
-    //     imgSrc={card.imgSrc}
-    //     date={card.date}
-    //     title={card.title}
-    //     description={card.description}
-    //     hidden={card.hidden}
-    //   />
-    // ))}
-    // <div className="flex min-h-screen flex-col items-center justify-between p-24">
-    //   <section className="p-4 pt-20">
-    //     <div className="flex flex-col text-center w-full mb-20">
-    //       <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
-    //         Blogs
-    //       </h2>
-    //       <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
-    //         Recent Blogs
-    //       </h1>
-    //     </div>
-    //     <div className=" mb-4">
-    //       <section className="text-gray-600 body-font overflow-hidden">
-    //         <div className="container mx-auto">
-    //           <section className=" text-gray-600 body-font">
-    //             <div className="px-5">
-    //               <div className=" flex flex-wrap -m-4">
-    //                 {data?.data &&
-    //                   Array.from(
-    //                     data?.data as unknown as {
-    //                       id: number;
-    //                       attributes: { Title: string; Description: string };
-    //                     }[]
-    //                   ).map((item) => {
-    //                     return (
-    //                       <>
-    //                         <Card
-    //                           id={item?.id}
-    //                           title={item?.attributes?.Title}
-    //                           description={item?.attributes?.Description}
-    //                           svgPath="M22 12h-4l-3 9L9 3l-3 9H2"
-    //                         />
-    //                       </>
-    //                     );
-    //                   })}
-    //               </div>
-    //             </div>
-    //           </section>
-    //         </div>
-    //       </section>
-    //     </div>
-    //   </section>
-    // </div>
   );
 };
 
