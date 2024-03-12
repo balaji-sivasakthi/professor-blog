@@ -17,6 +17,8 @@ const Content = () => {
   if (originalData?.Image?.data && originalData?.Image?.data[0]) {
     urlLink = originalData?.Image?.data[0]?.attributes?.formats?.large?.url;
   }
+  console.log(urlLink);
+
   console.log(`http://localhost:1337${urlLink}`);
   const profileLink = originalData?.Profile?.data?.attributes?.url;
   console.log(profileLink);
@@ -30,19 +32,7 @@ const Content = () => {
               <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl">
                 {originalData?.Title}
               </h1>
-              <span className="text-slate-500">
-                By {originalData?.Author}{" "}
-                {new Date(originalData?.createdAt).toLocaleString()}
-              </span>
-              <div className="py-10">
-                {urlLink && (
-                  <img
-                    className="mr-4 w-full h-full"
-                    src={`http://localhost:1337${urlLink}`}
-                  />
-                )}
-              </div>
-              <p className="lead text-slate-800">{originalData?.Description}</p>
+              <p className="text-sm font-normal">{originalData?.Description}</p>
             </header>
           </article>
         </div>

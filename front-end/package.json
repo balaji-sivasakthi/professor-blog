@@ -13,6 +13,8 @@
     "@types/negotiator": "^0.6.3",
     "@types/qs": "^6.9.11",
     "classnames": "^2.5.1",
+    "flowbite-react": "^0.7.2",
+    "framer-motion": "^11.0.8",
     "negotiator": "^0.6.3",
     "next": "14.1.0",
     "qs": "^6.11.2",
