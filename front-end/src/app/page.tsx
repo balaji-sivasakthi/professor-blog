@@ -4,7 +4,7 @@ import Profile from "@professor-blog/components/Profile";
 import Contribution from "@professor-blog/components/Contribution";
 import Contact from "./contact/page";
 
-export function Home() {
+export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-between p-24">
       <Hero />
@@ -15,5 +15,3 @@ export function Home() {
     </div>
   );
 }
-
-export default Home;
