@@ -67,7 +67,7 @@ const Footer = () => {
                 <img
                   className="rounded-full p-1"
                   height={80}
-                  width={80}
+                  width={100}
                   src="./assets/images/chancellor.png"
                   alt="mockup"
                 />
