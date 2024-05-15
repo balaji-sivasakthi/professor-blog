@@ -20,6 +20,7 @@ const AboutContainer = () => {
               <h2 className="font-medium text-3xl m-2 p-2 text-indigo-500">
                 Dr.S.Jayarama Reddy ( M.Sc., Ph.D )
               </h2>
+              <p>Date of Birth: 1 July 1945</p>
               {isFormerly ? (
                 <>
                   <h4 className="font-light mt-2 text-2xl">Formerly</h4>
