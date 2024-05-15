@@ -20,28 +20,52 @@ const AboutContainer = () => {
               <h2 className="font-medium text-3xl m-2 p-2 text-indigo-500">
                 Dr.S.Jayarama Reddy ( M.Sc., Ph.D )
               </h2>
+              <p>Date of Birth: 1 July 1945</p>
               {isFormerly ? (
                 <>
                   <h4 className="font-light mt-2 text-2xl">Formerly</h4>
-                  <p className="mt-2 leading-8">
-                    Chancellor, Sri Chandrasekharendra Saraswathi Viswa
-                    Mahavidyalaya (Deemed to be University), Kanchipuram
-                    Vice-Chancellor, Sri Venkateswara University, Tirupati
-                    President, PRIST (Deemed to be University), Thanjavur
-                    Chairman, University Advisory Board, Shri Guru Ram Rai
-                    University, Dehradun Chairman, University Task Force,
-                    Centurion University, Bhubaneswar Chairman, University Task
-                    Force, Jain University, Bengaluru
-                  </p>
+                  <ul className="mt-2 leading-8">
+                    <li>
+                      {" "}
+                      Chancellor, Sri Chandrasekharendra Saraswathi Viswa
+                      Mahavidyalaya (Deemed to be University), Kanchipuram
+                    </li>
+                    <li>
+                      {" "}
+                      Vice-Chancellor, Sri Venkateswara University, Tirupati
+                    </li>
+                    <li>
+                      {" "}
+                      President, PRIST (Deemed to be University), Thanjavur
+                    </li>
+                    <li>
+                      Chairman, University Advisory Board, Shri Guru Ram Rai
+                      University, Dehradun
+                    </li>
+                    <li>
+                      Chairman, University Task Force, Centurion University,
+                      Bhubaneswar
+                    </li>
+                    <li>
+                      {" "}
+                      Chairman, University Task Force, Jain University,
+                      Bengaluru
+                    </li>
+                  </ul>
                 </>
               ) : (
                 <>
                   <h4 className="font-light mt-2 text-2xl">Presently</h4>
-                  <p className="mt-2 leading-8">
-                    Member Advisory Board, Sri Sathya Sai University for Human
-                    Excellence, Banglore Member Govering Council, SNS
-                    Institutions, Coimbatore
-                  </p>
+                  <ol className="mt-2 leading-8">
+                    <li>
+                      Member Advisory Board, Sri Sathya Sai University for Human
+                      Excellence, Banglore
+                    </li>
+                    <li>
+                      {" "}
+                      Member Govering Council, SNS Institutions, Coimbatore
+                    </li>
+                  </ol>
                 </>
               )}
             </div>
