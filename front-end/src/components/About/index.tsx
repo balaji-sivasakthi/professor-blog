@@ -18,7 +18,7 @@ const AboutContainer = () => {
                 alt="mockup"
               />
               <h2 className="font-medium text-3xl m-2 p-2 text-indigo-500">
-                Hello! {"I'm"} Dr.S.Jayarama Reddy ( M.Sc., Ph.D )
+                Dr.S.Jayarama Reddy ( M.Sc., Ph.D )
               </h2>
               {isFormerly ? (
                 <>

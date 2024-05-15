@@ -10,7 +10,6 @@ export default function Home() {
       <AboutContainer />
       <Profile />
       <Contribution />
-      <Contact />
     </div>
   );
 }
